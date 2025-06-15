@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 20, 2025 at 01:52 PM
+-- Generation Time: Jun 15, 2025 at 10:36 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -43,8 +43,8 @@ CREATE TABLE `ban` (
 --
 
 INSERT INTO `ban` (`idban`, `soghe`, `vitri`, `trangthai`, `id_user`, `tenkh`, `ngaydatban`, `sdt`) VALUES
-(1, 4, '1', 1, 2, NULL, NULL, NULL),
-(2, 6, '1', 1, NULL, 'kiệt', '2025-05-02 18:13:00', '123123123'),
+(1, 4, '1', 0, NULL, NULL, NULL, NULL),
+(2, 6, '1', 0, NULL, NULL, NULL, NULL),
 (3, 8, '2', 0, NULL, NULL, NULL, NULL),
 (4, 4, '1', 0, NULL, NULL, NULL, NULL),
 (5, 6, '4', 0, NULL, NULL, NULL, NULL),
@@ -151,23 +151,96 @@ INSERT INTO `chatbox` (`id_chat`, `cauhoi`, `cautraloi`, `id_user`, `thoigian`, 
 (83, 'sao m sao', '', 2, '2025-05-20 13:34:58', 4, 1),
 (84, '', 'a', 2, '2025-05-20 13:35:04', 1, 0),
 (85, 'alo', '', 2, '2025-05-20 13:36:03', 4, 1),
-(86, '', 'gi', 2, '2025-05-20 13:36:06', 1, 0);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `chitiethoadon`
---
-
-CREATE TABLE `chitiethoadon` (
-  `id_chitiethd` int(11) NOT NULL,
-  `idmonan` int(11) NOT NULL,
-  `tenmonan` varchar(50) NOT NULL,
-  `dongia` float NOT NULL,
-  `soluong` int(11) NOT NULL,
-  `giamgia` float NOT NULL,
-  `id_hd` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+(86, '', 'gi', 2, '2025-05-20 13:36:06', 1, 0),
+(87, 'alo', '', 2, '2025-05-21 09:27:52', 4, 1),
+(88, 'alo', '', 2, '2025-05-21 09:28:03', 4, 1),
+(89, 'alo', '', 2, '2025-05-21 09:28:09', 4, 1),
+(90, 'alo', '', 2, '2025-05-21 09:28:26', 4, 1),
+(91, 'alo', '', 2, '2025-05-21 09:29:18', 4, 1),
+(92, 'alo', '', 2, '2025-05-21 09:29:29', 4, 1),
+(93, '', 'alo', 2, '2025-05-21 09:30:03', 1, 0),
+(94, '', 'alo', 2, '2025-05-21 09:30:07', 1, 0),
+(95, '', 'alo', 2, '2025-05-21 09:30:09', 1, 0),
+(96, '', 'alo', 2, '2025-05-21 09:30:10', 1, 0),
+(97, 'alo', '', 2, '2025-05-21 09:30:13', 4, 1),
+(98, 'alo', '', 2, '2025-05-21 09:30:29', 4, 1),
+(99, '', 'alo', 2, '2025-05-21 09:30:33', 1, 0),
+(100, 'alo', '', 2, '2025-05-21 09:30:52', 4, 1),
+(101, '', 'alo', 2, '2025-05-21 09:31:08', 1, 0),
+(102, 'alo', '', 2, '2025-05-21 09:31:20', 4, 1),
+(103, '', 'alo', 2, '2025-05-21 09:31:28', 1, 0),
+(104, 'alo', '', 2, '2025-05-21 09:31:46', 4, 1),
+(105, 'alo', '', 2, '2025-05-21 09:31:51', 4, 1),
+(106, 'alo', '', 2, '2025-05-21 09:31:58', 4, 1),
+(107, 'alo', '', 2, '2025-05-21 09:31:59', 4, 1),
+(108, 'alo', '', 2, '2025-05-21 09:32:05', 4, 1),
+(109, '', 'alo', 2, '2025-05-21 09:32:11', 1, 0),
+(110, '', 'alo', 2, '2025-05-21 09:32:16', 1, 0),
+(111, 'me m', '', 2, '2025-05-21 09:33:34', 4, 1),
+(112, '', 'alo', 2, '2025-05-21 09:33:40', 1, 0),
+(113, 'alo', '', 2, '2025-05-21 09:33:43', 4, 1),
+(114, 'alo', '', 2, '2025-05-21 09:36:10', 4, 1),
+(115, 'alo', '', 2, '2025-05-21 09:37:07', 4, 1),
+(116, 'alo', '', 2, '2025-05-21 09:37:17', 4, 1),
+(117, '', 'alo', 2, '2025-05-21 09:37:21', 1, 0),
+(118, 'alo', '', 2, '2025-05-21 09:39:06', 4, 1),
+(119, 'me m', '', 2, '2025-05-21 09:49:14', 4, 1),
+(120, 'alo', '', 2, '2025-05-21 09:49:25', 4, 1),
+(121, '', 'lo', 2, '2025-05-21 09:49:28', 1, 0),
+(122, 'alo', '', 2, '2025-05-21 09:49:34', 4, 1),
+(123, 'lo', '', 2, '2025-05-21 09:54:01', 4, 1),
+(124, 'ádlfasl', '', 2, '2025-05-21 09:54:03', 4, 1),
+(125, 'sadfas', '', 2, '2025-05-21 09:54:03', 4, 1),
+(126, 'fdsalfas;', '', 2, '2025-05-21 09:54:14', 4, 1),
+(127, 'ádfsda', '', 2, '2025-05-21 09:54:15', 4, 1),
+(128, '', 'ádfsa', 2, '2025-05-21 09:54:18', 1, 0),
+(129, 'alo', '', 2, '2025-05-21 09:58:08', 4, 1),
+(130, 'alo', '', 2, '2025-05-21 09:59:03', 4, 1),
+(131, 'alo', '', 2, '2025-05-21 09:59:11', 4, 1),
+(132, 'alo', '', 2, '2025-05-21 10:04:57', 4, 1),
+(133, 'alo', '', 2, '2025-05-21 10:05:28', 4, 1),
+(134, '', 'alo', 2, '2025-05-21 10:05:33', 1, 0),
+(135, 'ALO', '', 2, '2025-05-21 10:09:12', 4, 1),
+(136, 'ME M', '', 2, '2025-05-21 10:09:25', 4, 1),
+(137, 'ghe k', '', 2, '2025-05-21 10:09:32', 4, 1),
+(138, 'alo', '', 2, '2025-05-21 10:09:37', 4, 1),
+(139, 'ư', '', 2, '2025-05-21 10:09:44', 4, 1),
+(140, 'alo', '', 2, '2025-05-21 10:09:46', 4, 1),
+(141, 'ne m', '', 2, '2025-05-21 10:09:47', 4, 1),
+(142, '', 'alo', 2, '2025-05-21 10:09:52', 1, 0),
+(143, 'alo', '', 2, '2025-05-21 10:31:20', 4, 1),
+(144, '', 'alo', 2, '2025-05-21 10:32:17', 1, 0),
+(145, 'alo', '', 2, '2025-05-21 10:32:21', 4, 1),
+(146, 'alo', '', 2, '2025-05-21 10:56:06', 4, 1),
+(147, 'lo', '', 2, '2025-05-21 10:56:16', 4, 1),
+(148, 'alo', '', 2147483647, '2025-05-21 12:11:22', 4, 0),
+(149, 'alo', '', 2147483647, '2025-05-21 12:11:28', 4, 0),
+(150, 'alo', '', 17, '2025-05-21 12:23:59', 4, 1),
+(151, '', 'alo', 17, '2025-05-21 12:24:41', 1, 0),
+(152, 'alo', '', 2, '2025-05-23 08:59:16', 4, 1),
+(153, 'helo', '', 18, '2025-05-23 09:49:05', 4, 1),
+(154, '', 'lo cc', 18, '2025-05-23 09:49:35', 1, 0),
+(155, '?', '', 18, '2025-05-23 09:49:40', 4, 1),
+(156, 'alo', '', 21, '2025-05-25 08:14:59', 4, 1),
+(157, 'alo', '', 17, '2025-05-26 14:40:05', 4, 1),
+(158, 'alo', '', 17, '2025-05-26 15:16:23', 4, 1),
+(159, '', 'Chào bạn. Tôi có thể giúp gì cho bạn', 17, '2025-05-26 15:16:56', 1, 0),
+(160, 'alo', '', 2, '2025-05-27 06:14:20', 4, 1),
+(161, 'alo', '', 2, '2025-05-27 06:14:50', 4, 1),
+(162, 'alo', '', 24, '2025-05-27 06:24:28', 4, 1),
+(163, 'alo', '', 23, '2025-05-27 06:24:52', 4, 1),
+(164, 'helo', '', 23, '2025-05-27 13:18:35', 4, 1),
+(165, 'helo', '', 23, '2025-05-27 13:19:57', 4, 1),
+(166, 'helo', '', 23, '2025-05-27 13:20:09', 4, 1),
+(167, 'hi', '', 23, '2025-05-27 13:20:14', 4, 1),
+(168, '', 'ba', 23, '2025-05-27 13:20:19', 1, 0),
+(169, 'helo', '', 23, '2025-05-27 13:20:31', 4, 1),
+(170, '', 'helo', 23, '2025-05-27 13:20:44', 1, 0),
+(171, 'alo', '', 23, '2025-05-27 13:32:24', 4, 1),
+(172, '', 'xin chao', 23, '2025-05-27 13:32:43', 1, 0),
+(173, 'alo', '', 23, '2025-05-27 13:48:45', 4, 1),
+(174, 'alo', '', 28, '2025-05-27 15:03:56', 4, 1),
+(175, '', 'xin chao', 28, '2025-05-27 15:04:12', 1, 0);
 
 -- --------------------------------------------------------
 
@@ -183,44 +256,22 @@ CREATE TABLE `dondatban` (
   `email` varchar(100) DEFAULT NULL,
   `ghichu` varchar(1000) DEFAULT NULL,
   `soluong` int(11) NOT NULL,
-  `trangthai` int(11) NOT NULL
+  `trangthai` int(11) NOT NULL,
+  `id_user` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `dondatban`
 --
 
-INSERT INTO `dondatban` (`idddb`, `tenkh`, `ngaydatban`, `sdt`, `email`, `ghichu`, `soluong`, `trangthai`) VALUES
-(1, 'Trần Cao Kiệt', '2025-05-05 22:05:00', '0364127297', 'abc@gmail.com', '123123', 1, 0),
-(2, 'Trần Văn Ân', '2025-05-17 17:27:00', '0352856380', 'abc@gmail.com', 'sfsdg', 5, 0);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `giohang`
---
-
-CREATE TABLE `giohang` (
-  `id_giohang` int(11) NOT NULL,
-  `idmonan` int(11) NOT NULL,
-  `tenmonan` varchar(100) NOT NULL,
-  `dongia` float NOT NULL,
-  `soluong` int(11) NOT NULL,
-  `trangthai` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `hoadon`
---
-
-CREATE TABLE `hoadon` (
-  `id_hd` int(11) NOT NULL,
-  `idmonan` int(11) NOT NULL,
-  `id_user` int(11) NOT NULL,
-  `ngaylayhd` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+INSERT INTO `dondatban` (`idddb`, `tenkh`, `ngaydatban`, `sdt`, `email`, `ghichu`, `soluong`, `trangthai`, `id_user`) VALUES
+(1, 'Trần Cao Kiệt', '2025-05-05 22:05:00', '0364127297', 'abc@gmail.com', '123123', 1, 2, NULL),
+(2, 'Trần Văn Ân', '2025-05-17 17:27:00', '0352856380', 'abc@gmail.com', 'sfsdg', 5, 2, NULL),
+(6, 'ấdfdasf', '2025-05-23 16:59:00', '12321323123', 'abc@gmail.com', 'ádfads', 2, 1, 2),
+(7, 'Trần Cao Kiệt', '2025-05-23 15:08:00', '0364127297', 'admin@admin.com', '123123', 4, 2, 17),
+(8, 'Trần Cao Kiệt', '2025-05-25 16:14:00', '0364127297', 'abc@gmail.com', '', 3, 1, 21),
+(9, 'Kiệt', '2025-05-25 19:53:00', '0323456789', 'abc@gmail.com', '', 2, 0, 18),
+(10, 'Trần Cao Kiệt', '2025-05-27 20:09:00', '0364127297', 'trancaokiet99@gmail.com', '', 6, 1, 28);
 
 -- --------------------------------------------------------
 
@@ -256,7 +307,7 @@ CREATE TABLE `monan` (
   `tenmonan` varchar(50) NOT NULL,
   `mota` varchar(500) DEFAULT NULL,
   `giaban` float DEFAULT NULL,
-  `hinhanh` varchar(20) DEFAULT NULL,
+  `hinhanh` varchar(1000) DEFAULT NULL,
   `trangthai` int(11) NOT NULL,
   `idloaimonan` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
@@ -266,17 +317,17 @@ CREATE TABLE `monan` (
 --
 
 INSERT INTO `monan` (`idmonan`, `tenmonan`, `mota`, `giaban`, `hinhanh`, `trangthai`, `idloaimonan`) VALUES
-(1, 'Gỏi cuốn tây sơn', 'Gỏi cuốn tôm thịt ăn kèm nước chấm chua ngọt.', 25000, 'goicuon.jpg', 1, 1),
+(1, 'gỏi cuốn', 'Gỏi cuốn tôm thịt ăn kèm nước chấm chua ngọt.', 25000, 'goicuon.jpg', 1, 1),
 (2, 'Súp cua', 'Súp cua nóng hổi, giàu dinh dưỡng.', 30000, 'supcua.jpg', 1, 1),
-(3, 'Cơm gà xối mỡ', 'Gà giòn rụm, cơm thơm béo, kèm nước mắm chua ngọt.', 45000, 'comga.jpg', 1, 2),
+(3, 'Cơm chiên dương châu', 'Gà giòn rụm, cơm thơm béo, kèm nước mắm chua ngọt.', 45000, 'com.jpg', 1, 2),
 (4, 'Phở bò', 'Phở bò truyền thống với nước dùng đậm đà.', 40000, 'phobo.jpg', 1, 2),
-(5, 'Chè ba màu', 'Chè truyền thống mát lạnh, ngọt dịu.', 20000, 'chebamau.jpg', 1, 3),
+(5, 'Chè đậu đỏ', 'Chè truyền thống ngọt dịu.', 20000, 'chedaudo.jpg', 1, 3),
 (6, 'Bánh flan', 'Bánh flan mềm mịn, dùng kèm cà phê sữa.', 18000, 'flan.jpg', 1, 3),
 (7, 'Trà đào', 'Trà đào mát lạnh, topping miếng đào giòn.', 25000, 'tradao.jpg', 1, 4),
 (8, 'Sinh tố bơ', 'Sinh tố bơ nguyên chất, béo ngậy.', 30000, 'botto.jpg', 1, 4),
 (9, 'Khoai tây chiên', 'Khoai tây chiên giòn rụm, ăn kèm tương ớt.', 20000, 'khoaitay.jpg', 1, 5),
-(10, 'Bánh mì que', 'Bánh mì giòn với nhân pate cay.', 15000, 'banhmique.jpg', 1, 5),
-(11, 'Burger nhỏ', 'burger nhỏ', 40000, '666_P-BURGER.jpg', 1, 2),
+(10, 'Bánh mì que', 'Bánh mì giòn với nhân pate cay.', 15000, 'banhmyque.jpg', 1, 5),
+(11, 'Burger nhỏ', 'burger nhỏ', 40000, 'burger.jpg', 1, 2),
 (12, 'Beefsteek', 'bò Mỹ chất lương cao', 350000, '552_P-RICE-KING.png', 1, 2);
 
 -- --------------------------------------------------------
@@ -288,7 +339,7 @@ INSERT INTO `monan` (`idmonan`, `tenmonan`, `mota`, `giaban`, `hinhanh`, `trangt
 CREATE TABLE `nguoidung` (
   `id_user` int(11) NOT NULL,
   `hoten` varchar(50) NOT NULL,
-  `gioitinh` int(11) NOT NULL,
+  `gioitinh` int(11) DEFAULT NULL,
   `email` varchar(50) NOT NULL,
   `sdt` varchar(15) NOT NULL,
   `id_role` int(11) NOT NULL,
@@ -301,14 +352,23 @@ CREATE TABLE `nguoidung` (
 --
 
 INSERT INTO `nguoidung` (`id_user`, `hoten`, `gioitinh`, `email`, `sdt`, `id_role`, `password`, `trangthai`) VALUES
-(1, 'Nguyễn Văn An', 1, 'nguyenvanan@gmail.com', '0912345678', 1, 'e10adc3949ba59abbe56e057f20f883e', 1),
+(1, 'Nguyễn Văn An', 1, 'nguyenvanan@gmail.com', '0912345678', 2, 'e10adc3949ba59abbe56e057f20f883e', 1),
 (2, 'trancaokiet', 1, 'trancaokiet@gmail.com', '0123456789', 4, 'e10adc3949ba59abbe56e057f20f883e', 1),
 (3, 'quynh huong', 0, 'huong123@gmail.com', '0986345724', 2, 'e10adc3949ba59abbe56e057f20f883e', 1),
-(4, 'Nguyễn Minh', 1, 'minh123@gmail.com', '0324685468', 3, 'e10adc3949ba59abbe56e057f20f883e', 1),
+(4, 'Nguyễn Minh', 1, 'minh123@gmail.com', '0324685468', 3, 'e10adc3949ba59abbe56e057f20f883e', 0),
 (5, 'admin', 1, 'admin@admin.com', '0123456789', 1, '21232f297a57a5a743894a0e4a801fc3', 1),
 (6, 'Trần Văn Ân', 1, 'an@gmail.com', '0123456789', 1, '123456', 1),
 (14, 'kiệt trần', 1, 'abc@gmail.com', '0364127297', 4, 'e10adc3949ba59abbe56e057f20f883e', 1),
-(16, 'kiet tran', 1, '123@123.om', '123123123', 4, 'e10adc3949ba59abbe56e057f20f883e', 1);
+(16, 'kiet tran', 1, '123@123.om', '123123123', 4, 'e10adc3949ba59abbe56e057f20f883e', 1),
+(19, 'kiệt trần', 1, 'kiet@gmail.com', '0364127297', 4, 'e10adc3949ba59abbe56e057f20f883e', 1),
+(20, 'kiệt trần', 1, 'kiet1@gmail.com', '0824395019', 4, 'e10adc3949ba59abbe56e057f20f883e', 1),
+(21, 'kiệt trần', 1, 'trancaokiet9@gmail.com', '0364127297', 4, '202cb962ac59075b964b07152d234b70', 1),
+(23, 'Kiệt Trần Cao', NULL, 'trancaokiet1705@gmail.com', '', 4, '', 1),
+(24, 'Dương Dương', NULL, 'trancaokiet98@gmail.com', '', 4, '', 1),
+(25, 'A Tran', NULL, 'danviip201220@gmail.com', '', 4, '', 1),
+(26, 'Kiệt Trần', NULL, 'trancaokiet99@gmail.com', '', 4, '', 1),
+(27, 'kiet tran', NULL, 'trancaokiet170503@gmail.com', '', 4, '', 1),
+(28, 'Quynh Huong', NULL, 'huonggquynh03@gmail.com', '', 4, '', 1);
 
 -- --------------------------------------------------------
 
@@ -349,33 +409,10 @@ ALTER TABLE `chatbox`
   ADD PRIMARY KEY (`id_chat`);
 
 --
--- Indexes for table `chitiethoadon`
---
-ALTER TABLE `chitiethoadon`
-  ADD PRIMARY KEY (`id_chitiethd`),
-  ADD KEY `fk_chitiethoadon_hoadon` (`id_hd`),
-  ADD KEY `fk_chitiethoadon_monan` (`idmonan`);
-
---
 -- Indexes for table `dondatban`
 --
 ALTER TABLE `dondatban`
   ADD PRIMARY KEY (`idddb`);
-
---
--- Indexes for table `giohang`
---
-ALTER TABLE `giohang`
-  ADD PRIMARY KEY (`id_giohang`),
-  ADD KEY `fk_giohang_monan` (`idmonan`);
-
---
--- Indexes for table `hoadon`
---
-ALTER TABLE `hoadon`
-  ADD PRIMARY KEY (`id_hd`),
-  ADD KEY `fk_hoadon_monan` (`idmonan`),
-  ADD KEY `fk_hoadon_nguoidung` (`id_user`);
 
 --
 -- Indexes for table `loaimonan`
@@ -417,43 +454,25 @@ ALTER TABLE `ban`
 -- AUTO_INCREMENT for table `chatbox`
 --
 ALTER TABLE `chatbox`
-  MODIFY `id_chat` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=87;
-
---
--- AUTO_INCREMENT for table `chitiethoadon`
---
-ALTER TABLE `chitiethoadon`
-  MODIFY `id_chitiethd` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_chat` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=176;
 
 --
 -- AUTO_INCREMENT for table `dondatban`
 --
 ALTER TABLE `dondatban`
-  MODIFY `idddb` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
-
---
--- AUTO_INCREMENT for table `giohang`
---
-ALTER TABLE `giohang`
-  MODIFY `id_giohang` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `hoadon`
---
-ALTER TABLE `hoadon`
-  MODIFY `id_hd` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idddb` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `monan`
 --
 ALTER TABLE `monan`
-  MODIFY `idmonan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `idmonan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 
 --
 -- AUTO_INCREMENT for table `nguoidung`
 --
 ALTER TABLE `nguoidung`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT for table `vaitro`
@@ -470,26 +489,6 @@ ALTER TABLE `vaitro`
 --
 ALTER TABLE `ban`
   ADD CONSTRAINT `fk_ban_nguoidung` FOREIGN KEY (`id_user`) REFERENCES `nguoidung` (`id_user`);
-
---
--- Constraints for table `chitiethoadon`
---
-ALTER TABLE `chitiethoadon`
-  ADD CONSTRAINT `fk_chitiethoadon_hoadon` FOREIGN KEY (`id_hd`) REFERENCES `hoadon` (`id_hd`),
-  ADD CONSTRAINT `fk_chitiethoadon_monan` FOREIGN KEY (`idmonan`) REFERENCES `monan` (`idmonan`);
-
---
--- Constraints for table `giohang`
---
-ALTER TABLE `giohang`
-  ADD CONSTRAINT `fk_giohang_monan` FOREIGN KEY (`idmonan`) REFERENCES `monan` (`idmonan`);
-
---
--- Constraints for table `hoadon`
---
-ALTER TABLE `hoadon`
-  ADD CONSTRAINT `fk_hoadon_monan` FOREIGN KEY (`idmonan`) REFERENCES `monan` (`idmonan`),
-  ADD CONSTRAINT `fk_hoadon_nguoidung` FOREIGN KEY (`id_user`) REFERENCES `nguoidung` (`id_user`);
 
 --
 -- Constraints for table `monan`
