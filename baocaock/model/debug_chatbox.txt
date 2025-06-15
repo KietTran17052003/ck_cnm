@@ -1,0 +1,25 @@
+Array
+(
+    [access_token] => Array
+        (
+            [access_token] => ya29.a0AW4Xtxhyg21HdkM3MRGmf2ZujAiyt4oGihCuN4CFdtkfsWPdBYx6dy91Bw5AHV34HbYaHcA5ZK4xA8Vcf_oOSVngDjj3lel4IwDm_4zTWCOg6NF9U6rmHFlkhd1L1I1P9HeCV6u2QOIwFcQapGVQSJq_F4cJEN9Dl1CObO6BaCgYKAZ0SARMSFQHGX2MimpWj8k_-LduqYtorykfzNQ0175
+            [expires_in] => 3598
+            [scope] => https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid
+            [token_type] => Bearer
+            [id_token] => eyJhbGciOiJSUzI1NiIsImtpZCI6ImJhYTY0ZWZjMTNlZjIzNmJlOTIxZjkyMmUzYTY3Y2M5OTQxNWRiOWIiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzOTg0NzkwNjgzOTEtZHY4NG1oZ3VlbXR0ZXN1OTdxc3NzbGRuanVtM3VvZ2EuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzOTg0NzkwNjgzOTEtZHY4NG1oZ3VlbXR0ZXN1OTdxc3NzbGRuanVtM3VvZ2EuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTMzNjkyNDA2ODgxMjczMzA5MDgiLCJlbWFpbCI6Imh1b25nZ3F1eW5oMDNAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJjQWl3dk9PWjZMZHo2eC1tZ3JIblNnIiwibmFtZSI6IlF1eW5oIEh1b25nIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0tIbGRNS1FPeENoMVRWVGwxMjM3NlgwUWFoS3pYazRraVI5Y1A1U2xrOFFFbnRydz1zOTYtYyIsImdpdmVuX25hbWUiOiJRdXluaCIsImZhbWlseV9uYW1lIjoiSHVvbmciLCJpYXQiOjE3NDgzNTA5NTIsImV4cCI6MTc0ODM1NDU1Mn0.NNWgO-QgHEqX6BE7QHNRFbyRrYw8wCePhFAf2hkUewuOAx9OQrQ_JXx84A7BCio0nT27NXeEOA2D3AFk7N2aCrm7pQ9racZZJXpj1iZNy85PJE02W8XM_-xqC-z_rnHAsj9dzjwkPGEMGTpnU0-19h14zia1cesUMeMpmS-Au2wSZ7mbQeA9n8YjAV8KB6qJuSSRYmniog899WxMifvO357aU8-vuX7dKWsCfVCH-1974xGqH_RenQ3Z1z4gx7CCr_9SLEG-okKF6fuKPJ5JDovCSw8_vtb04uu80LD7q0KSEOCon-DpGunwkX1wMamN6uhrZRAXaK9QNI_ba-7DxQ
+            [created] => 1748350954
+        )
+
+    [dangnhap] => Array
+        (
+            [id_user] => 28
+            [hoten] => Quynh Huong
+            [gioitinh] => 
+            [email] => huonggquynh03@gmail.com
+            [sdt] => 
+            [id_role] => 4
+            [password] => 
+            [trangthai] => 1
+        )
+
+)
